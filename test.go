@@ -6,6 +6,7 @@ func test(i int) int {
 }
 
 type Mystr struct{
+	b int
 }
 
 func main(){
