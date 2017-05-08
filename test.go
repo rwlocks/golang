@@ -7,8 +7,17 @@ func test(i int) int {
 
 type Mystr struct{
 	b int
+	c string
+}
+
+func (s *Mystr) Test(a int, d string)() {
+	s.b = a
+	s.c = d
 }
 
 func main(){
-	fmt.Println("result: ", test(12))
+	s := Mystr{100, "hello"}
+	fmt.Println("result: ", s.b)
+    s.Test(1000, "world")
+	fmt.Println("result: ", s.c)
 }
