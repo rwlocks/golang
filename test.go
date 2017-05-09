@@ -11,6 +11,7 @@ type Mystr struct{
 }
 
 //hello, test
+//add another commets
 
 func (s *Mystr) Test(a int, d string)() {
 	s.b = a
