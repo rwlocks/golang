@@ -10,6 +10,8 @@ type Mystr struct{
 	c string
 }
 
+//hello, test
+
 func (s *Mystr) Test(a int, d string)() {
 	s.b = a
 	s.c = d
